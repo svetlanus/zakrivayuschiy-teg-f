@@ -16,7 +16,7 @@
   align-items: center;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--Inter-Variable), sans-serif;
+  font-family: var(--common-font), sans-serif;
   font-variation-settings: 'wght' var(--card-text-weight);
   background-color: var(--main-color);
   background-position: center;
@@ -28,7 +28,7 @@
 }
 
 .header {
-  font-family: var(--PressStart2P), sans-serif;
+  font-family: var(--accent-font), sans-serif;
   background-color: var(--main-color);
   text-transform: uppercase;
   inline-size: var(--block-width);
@@ -83,8 +83,8 @@
   align-items: center;
   position: relative;
   inline-size: 100%;
-  border-top: solid black 2px;
-  border-bottom: solid black 2px;
+  border-top: solid var(--accent-color) 2px;
+  border-bottom: solid var(--accent-color) 2px;
 }
 
 .card-image {
@@ -100,12 +100,12 @@
   flex-direction: column;
   gap: 25px;
   padding: 25px;
-  font-weight: var(--card-text-weight);
+  font-variation-settings: 'wght' var(--card-text-weight);
   line-height: 117%;
 }
 
 .card-label {
-  font-family: var(--PressStart2P), sans-serif;
+  font-family: var(--accent-font), sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   position: absolute;
@@ -154,7 +154,8 @@
 }
 
 @supports (
-  (text-stroke: var(--main-color) 1px solid) or (-webkit-text-stroke: var(--main-color) 1px solid)
+  (text-stroke: var(--main-color) 1px solid) or
+    (-webkit-text-stroke: var(--main-color) 1px solid)
 ) {
   .card-label {
     -webkit-text-stroke: var(--main-color) 1px;
@@ -182,7 +183,7 @@
 .button {
   position: relative;
   background-color: var(--main-color);
-  font-family: var(--PressStart2P), sans-serif;
+  font-family: var(--accent-font), sans-serif;
   line-height: 90%;
   font-size: var(--font-size-card);
   border: 2px solid var(--accent-color);
@@ -217,7 +218,7 @@
   position: relative;
   inline-size: 21px;
   z-index: 1;
-  fill: #fff;
+  fill: var(--main-color);
   mix-blend-mode: difference;
 }
 
@@ -243,7 +244,7 @@
 }
 
 .dialog-text {
-  font-family: var(--PressStart2P);
+  font-family: var(--accent-font), sans-serif;
   line-height: 150%;
   font-size: var(--font-size-card);
   text-transform: uppercase;
@@ -259,7 +260,7 @@
 }
 
 .dialog-section[open]::backdrop {
-  backdrop-filter: brightness(30%);
+  background: rgb(0 0 0 / 0.75);
 }
 
 .button:focus {

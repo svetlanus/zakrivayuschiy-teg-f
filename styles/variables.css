@@ -1,16 +1,16 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    --Inter-Variable: 'Inter-Variable';
-    --PressStart2P:'Press Start 2P';
+    --common-font: 'Inter-Variable';
+    --accent-font:'Press Start 2P';
     --card-heading-weight: 715;
     --card-text-weight: 410;
     --font-size-main:18px;
     --font-size-card:14px;
-    --background-color: #FFFFFF;
+    --background-color: #fff;
     --main-color: white;
     --accent-color:black;
-    --background-gradient-hor:repeating-linear-gradient( #d3d3d3, transparent 2px);
-    --background-gradient-vert:repeating-linear-gradient(90deg,#d3d3d3, transparent 2px);
+    --background-gradient-hor:repeating-linear-gradient(180deg, #d3d3d3 0 2px, transparent  2px 4px);
+    --background-gradient-vert:repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent  2px 4px);
     --background-gradient-main: linear-gradient(#e7e7e7, #1a1a1a);
     --block-width: clamp(375px, 260.5634px + 30.5164vw, 700px);
     --core-fill-color:white;
